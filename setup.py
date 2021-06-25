@@ -1,10 +1,10 @@
 import cx_Freeze
-executables = [cx_Freeze.Executable(script="game.py", icon="assets/livroIcon.ico")]
+executables = [cx_Freeze.Executable(script="game.py", icon="assets/livroIcon.png")]
 
 cx_Freeze.setup(
     name="Desvie das bebidas Alcólicas",
     options={"build_exe": {
-        "package": ["pygame"],
+        "packages": ["pygame"],
         "include_files":["assets"]
     }},
     executables = executables
